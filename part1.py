@@ -1,4 +1,4 @@
-def scs(X, Y):
+def matrix_length(X, Y):
     m, n = len(X), len(Y)
     L = [[0] * (n+1) for k in range(m+1)] # an m+1 by n+1 matrix
     for j in range(m+1):
@@ -34,3 +34,14 @@ def sequence(X, Y, L):
             seq.append(Y[k-1])
             k=k-1
     return ''.join(seq[::-1])
+
+def scs(X,Y):
+    L = matrix_length(X, Y)
+    value = sequence(X, Y, L)
+    return value
+
+# sample run
+# X, Y = 'GTCAGTATCGCCGCCTCCACTAACCCGTAGGGACCTTGTACAGGAACAGCGCGTTGCTTACTAGTAGTAATGGGCACATTTAGTAACGCTT', \
+# 'TGCAAACACTACATACCTTTCAAACCTACCCGCTTCTGTGTGTGTTATCGATATTAGGTACGAGTGGGATGAGCTGGATTAAATCTTATCGAAACTCTCG'
+# scs(X, Y)
+    
