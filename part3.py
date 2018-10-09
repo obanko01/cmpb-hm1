@@ -56,5 +56,5 @@ def global_alignment(s, t):
     return best, alignment(s, t, best_loc, L)
   
 # sample run
-s, t = 'PRTEINS', 'PRTWPSEIN'
-global_alignment(s, t)
+# s, t = 'PRTEINS', 'PRTWPSEIN'
+# global_alignment(s, t)
