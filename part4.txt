@@ -1,0 +1,6 @@
+Question 4
+This will be similar to looking for a continguous subsequence (or substring) that repeats itself. Given this direct repeat "TTACGnnnnnnTTACG", the task will require identify repeating subsequences. We could use a suffix tree to identify the common substrings and the frequencies of these substrings.
+
+Even after identifying these repeating subsequences, there is not guarantee that these repeats are TSDs. We know by definition that they occur at insertion sites of transposable sequences. As such, we would have to examine the regions of these subqeuences to see if they look like transposable sequences.
+
+Another challenge is defining the length of these repeating subsequences. 1 is definitely trivial and not an interesting start. Perhaps 4, 5, 6, etc. We would have to experiment with different values of repeat lengths as well and see how this affects the result. The suffix tree will allow us to answer this question as well.
