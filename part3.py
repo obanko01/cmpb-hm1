@@ -46,8 +46,6 @@ def alignment(s, t, L):
             suffix_s = s[i-1] + suffix_s
             prefix_t = '-' + prefix_t
             i -= 1
-        else:
-            print('error')
     return suffix_s, prefix_t
 
 def global_alignment(s, t):
